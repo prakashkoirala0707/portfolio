@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <main id="main" style="margin-top: 100px">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img style="height: 500px; width: 500px" src="{{portfolio_detail.img.url}}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="height: 500px; width: 500px" src="{{portfolio_detail.support_img_1.url}}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="height: 500px; width: 500px" src="{{portfolio_detail.support_img_2.url}}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+
+              <ul>
+                <li><strong>Category</strong>: {{portfolio_detail.category}}</li>
+                <li><strong>Client</strong>: {{portfolio_detail.client}}</li>
+                <li><strong>Project date</strong>: {{portfolio_detail.project_date}}</li>
+                <li><strong>Project URL</strong>: <a href="{{portfolio_detail.project_url}}">{{portfolio_detail.project_url}}</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" style="height: auto">
+              <h2>Portfolio Detail</h2>
+
+             <p> {{portfolio_detail.description}} </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+  </main>
+
+{% endblock %}

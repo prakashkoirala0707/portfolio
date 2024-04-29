@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<style>
+
+  body{
+  margin-top: 20px;
+
+  }
+.blog-image{
+height: 300px;
+width: 100%;
+border-radius: 10%;
+}
+.blog-category{
+text-align: center;
+}
+
+</style>
+{% endblock %}
+
+
+{% block content %}
+  {% if latest_blog %}
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container" style="margin-top: 50px">
+        <div class="row">
+          {% for blog in latest_blog %}
+            <div class="col-sm-4" style="margin-bottom: 20px">
+              <a href="{% url 'portfolio:my-blog' blog.id %}">
+                <div class="item">
+                  <img class="blog-image"  src="{{ blog.img.url }}" alt="Image" class="img-fluid">
+
+                 <h3 class="blog-category">
+
+                      {{ blog.category }}
+                 </h3>
+
+                </div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% else %}
+    <div class="container">
+      <h1>No Blogs available</h1>
+    </div>
+  {% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+

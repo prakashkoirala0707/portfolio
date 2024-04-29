@@ -1,0 +1,604 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div id="hero" class="hero route bg-image"
+     style="background-image: url('{% static 'img/hero-bg.png' %}'); background-size: 50% 100%; background-color: black;">
+
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <!--<p class="display-6 color-d">Hello, world!</p>-->
+                <h1 class="hero-title mb-4">I am Prakash Koirala</h1>
+
+                <p class="hero-subtitle"><span class="typed"
+                                               data-typed-items="Professor, Web - Developer, Android Developer, Network Engineer"></span>
+                </p>
+                <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+            </div>
+        </div>
+    </div>
+</div>
+</div><!-- End Hero Section -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <div class="about-img">
+                                            <img src="{% static 'img/hero-bg.jpg' %}" class="img-fluid rounded b-shadow-a"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-7">
+                                        <div class="about-info">
+                                            <p><span class="title-s">Name: </span> <span>Prakash Koirala</span></p>
+                                            <p><span class="title-s">Profile: </span>
+                                                <span>Full Stack Web Developer</span></p>
+                                            <p><span class="title-s">Framework: </span> <span>Django</span></p>
+                                            <p><span class="title-s">Language: </span> <span>Python</span></p>
+
+                                            <p><span class="title-s">Email: </span>
+                                                <span>prakashkoirala0707@gmail.com</span></p>
+                                            <p><span class="title-s">Contact: </span> <span>9803730634</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-mf">
+                                    <p class="title-s">Skill</p>
+                                    <span>HTML</span> <span class="pull-right">85%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;"
+                                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>CSS3</span> <span class="pull-right">75%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%"
+                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>JAVASCRIPT</span> <span class="pull-right">50%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%"
+                                             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>PostgreSql Database</span> <span class="pull-right">60%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%"
+                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Python and Django</span> <span class="pull-right">40%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 40%"
+                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about-me pt-4 pt-md-0">
+                                    <div class="title-box-2">
+                                        <h5 class="title-left">
+                                            About me
+                                        </h5>
+                                    </div>
+                                    <p class="lead">
+                                        I'm Professor <span style="font-weight: bold;">Prakash Koirala</span>, a Full
+                                        Stack – Python Web Developer and passionate IT educator. With expertise in both
+                                        academia and industry, I'm committed to nurturing the tech leaders of tomorrow.
+                                    </p>
+                                    <p class="lead">
+                                        Crafting elegant solutions and designing intuitive interfaces are my forte. I
+                                        believe in the power of technology to drive positive change and advocate for
+                                        diversity and inclusion in all aspects of my work. </p>
+                                    <p class="lead">
+                                        Let's connect and explore the limitless possibilities of IT together. Whether
+                                        you're a fellow enthusiast or a curious learner, I'm here to collaborate and
+                                        inspire. Reach out, and let's embark on this exciting journey! </p>
+
+                                    <a href="{% static 'files/cv.pdf' %} "  download  >
+                                        <button class="download-button" type="button"> Download CV</button>
+                                    </a>
+                                    <a href="{% static 'files/cv.pdf' %} " target="_blank"  >
+                                        <button class="download-button" type="button" style="margin-top: 20px; box-sizing: border-box; padding-right: 100px"> Read CV</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            Services
+                        </h3>
+                        <p class="subtitle-a">
+                            I Provide You Best Of The Best Service </p>
+                        <div class="line-mf"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="web_development_detail">
+
+            </a>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <a href="{% url 'portfolio:web-services'%}">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Web Development</h2>
+                                <ol type="1">
+                                    <li style="text-align: left;">Web Application Development</li>
+                                    <li style="text-align: left;">E-commerce Solutions</li>
+                                    <li style="text-align: left;">Website Maintenance and Support</li>
+                                    <li style="text-align: left;">Website Performance Optimization</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-md-4">
+                    <a href="{% url 'portfolio:mobile-services'%}">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Mobile App Development</h2>
+                                <ol type="1">
+                                    <li style="text-align: left;">Platform Selection</li>
+                                    <li style="text-align: left;">Backend Development</li>
+                                    <li style="text-align: left;">Frontend Development</li>
+                                    <li style="text-align: left;">API Integration</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% url 'portfolio:desktop-services'%}">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Desktop Application</h2>
+                                <ol type="1">
+                                    <li style="text-align: left;">User Interface Design</li>
+                                    <li style="text-align: left;">Functionality and Features</li>
+                                    <li style="text-align: left;">Performance Optimization</li>
+                                    <li style="text-align: left;">Compatibility and Deployment</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-color: blue;">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle "><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+                               class="counter purecounter"></p>
+                            <span class="counter-text">WORKS COMPLETED</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+                               class="counter purecounter"></p>
+                            <span class="counter-text">YEARS OF EXPERIENCE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="bi bi-people"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
+                               class="counter purecounter"></p>
+                            <span class="counter-text">TOTAL CLIENTS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="bi bi-award"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                               class="counter purecounter"></p>
+                            <span class="counter-text">AWARD WON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            Portfolio
+                        </h3>
+                        <p class="subtitle-a">
+                            Highly organized and dedicated IT professional passionate about new technologies. Actively
+                            involved in nationwide IT, management, and social causes. </p>
+                        <div class="line-mf"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for portfolio in portfolios %}
+                    <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{{portfolio.img.url}}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                            <div class="work-img">
+                                <img style="height: 225px" src="{{portfolio.img.url}}" alt="" class="img-fluid" >
+                            </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">{{portfolio.title}}</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">{{portfolio.category}}</span> / <span
+                                            class="w-date">{{portfolio.project_date}}</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="{% url 'portfolio:portfolio-detail' portfolio.id %}"> <span class="bi bi-plus-circle"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-box">
+                                    <div class="author-test">
+                                        <img src="{% static 'img/bishwa.jpg' %}" alt="" class="rounded-circle b-shadow-a">
+                                        <span class="author" style="color: black;">Bishwa Vijay Khadka</span>
+                                    </div>
+                                    <div class="content-test">
+                                        <p class="description lead" style="color: aliceblue;">
+                                            Working with Developer Prakash Sir was a pleasure. His organizational skills
+                                            and attention to detail were evident in every task he undertook. He brought
+                                            fresh ideas to the table and showed great initiative in driving projects
+                                            forward. I would highly recommend him for any IT-related endeavor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- End testimonial item -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-box">
+                                    <div class="author-test">
+                                        <img src="{% static 'img/bibek.png' %}" alt="" class="rounded-circle b-shadow-a">
+                                        <span class="author" style="color: black;">Bibek Dhakal</span>
+                                    </div>
+                                    <div class="content-test">
+                                        <p class="description lead" style="color: aliceblue;">
+                                            Prakash is a dedicated and resourceful IT professional. His passion for
+                                            learning and adapting to new technologies is truly admirable. He played a
+                                            key role in our project, demonstrating excellent problem-solving skills and
+                                            a strong commitment to achieving results. </p>
+                                    </div>
+                                </div>
+                            </div><!-- End testimonial item -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-box">
+                                    <div class="author-test">
+                                        <img src="{% static 'img/nawaraj.jpg' %}" alt="" class="rounded-circle b-shadow-a">
+                                        <span class="author " style="color: black;">Nawaraj Khatri</span>
+                                    </div>
+                                    <div class="content-test">
+                                        <p class="description lead" style="color: aliceblue;">
+                                            Prakash's involvement in nationwide IT initiatives has been instrumental in
+                                            driving positive change in our industry. His leadership and advocacy for
+                                            important social causes reflect his dedication to making a difference beyond
+                                            the realm of technology. He is a true asset to our community.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- End testimonial item -->
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </div><!-- End Testimonials Section -->
+
+
+    <!-- ======= Blog Section ======= -->
+    <!-- <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-detail.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-detail.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-detail.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-detail.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-detail.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-detail.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    End Blog Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+             style="background-image: url(assets/img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-mf">
+                        <div id="contact-now" class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="title-box-2">
+                                        <h5 class="title-left">
+                                            Send Message Us
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <form action="{% url 'portfolio:feedback' %}" method="post" role="form">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" name="name" class="form-control" id="name"
+                                                               placeholder="Your Name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                               placeholder="Your Email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="subject"
+                                                               id="subject" placeholder="Subject" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" name="message" rows="5"
+                                                                  placeholder="Message" required></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 text-center my-3">
+
+                                                </div>
+                                                <div class="col-md-12 text-center">
+                                                    <button type="submit"
+                                                            class="button button-a button-big button-rouded">Send
+                                                        Message
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            Get in Touch
+                                        </h5>
+                                    </div>
+                                    <div class="more-info">
+                                        <p class="lead">
+                                            I am here for you service. You can remember me for any kind of Information
+                                            Technology Service.
+                                        </p>
+                                        <ul class="list-ico">
+                                            <li><span class="bi bi-geo-alt"></span>Kageshwori Manohara Municipality
+                                                कागेश्वरी मनोहरा
+                                                44600
+                                            </li>
+                                            <li><span class="bi bi-phone"></span> <a href="tel:+977-9803730634">9803730634</a>
+                                            </li>
+                                            <li><span class="bi bi-envelope"></span> <a
+                                                    href="mailto:prakashkoirala0707@gmail.com">prakashkoirala0707@gmail.com</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="socials">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/profile.php?id=100078551020304"
+                                                   target="new"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a>
+                                            </li>
+                                            <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li> -->
+                                            <li><a href="https://twitter.com/UjjwalKoirala20" target="new"><span
+                                                    class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                                            <li><a href="https://www.linkedin.com/in/prakash-koirala-511a17156/"
+                                                   target="new"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+{% endblock %}

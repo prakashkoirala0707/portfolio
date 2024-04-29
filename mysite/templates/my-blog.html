@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<div class="row" style="margin-top: 100px">
+
+    {% for blog in my_blog %}
+
+
+    <div class="col-md-4">
+        <div class="card card-blog">
+            <div class="card-img">
+                <a href="{% url 'portfolio:blog-detail' blog.id %}">
+                    <img src="{{ blog.img.url }}" alt="" class="img-fluid image-hover"
+                         style="height: 250px; border-radius: 10%">
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="card-category-box">
+                    <div class="card-category">
+                        <h6 class="category">{{blog.title}}</h6>
+                    </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">{{blog.description}}</a></h3>
+                <p class="card-description">
+                    {{ blog.imp_description|truncatewords:40 }}
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+

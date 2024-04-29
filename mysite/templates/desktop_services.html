@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<style>
+   .icon-100 { font-size: 100px; color: blue; }
+    .icon-100:hover { color: black; }
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row" style="margin-top: 150px; margin-left: 50px; margin-right: 50px; ">
+    {% for service in services %}
+    <div class="col-md-4">
+        <div class="service-box">
+            <div class="service-ico">
+                <i class="{{service.icon}} icon-100"></i>
+            </div>
+            <div class="service-content">
+                <h2 class="s-title">{{service.desktop_service_heading}}</h2>
+                <ol type="1">
+                    <li style="text-align: left;">{{service.description1}}</li>
+                    <li style="text-align: left;">{{service.description2}}</li>
+                    <li style="text-align: left;">{{service.description3}}</li>
+                    <li style="text-align: left;">{{service.description4}}</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+
+</div>
+
+{% endblock %}
+
