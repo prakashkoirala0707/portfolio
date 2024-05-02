@@ -6,12 +6,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="row" style="margin-top: 100px">
+<div class="row" style="margin-top: 100px; padding-left: 100px; padding-right: 100px">
 
     {% for blog in my_blog %}
 
 
-    <div class="col-md-4">
+    <div class="col-sm-4"  >
         <div class="card card-blog">
             <div class="card-img">
                 <a href="{% url 'portfolio:blog-detail' blog.id %}">

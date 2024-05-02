@@ -68,4 +68,7 @@ def desktop_services(request):
     return render(request, 'desktop_services.html', context)
 
 
-
+def academics(request):
+    return render(request, 'academics.html')
+def professional(request):
+    return render(request, 'professional.html')
